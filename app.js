@@ -9,7 +9,7 @@ var express          = require("express"),
     
     
 // mongoose.connect("mongodb://localhost:27017/w0rd-live", {useNewUrlParser: true});
-mongoose.connect("mongodb://<rabidale>:<P8RMC2QF>@ds263791.mlab.com:63791/w0rd-live", {useNewUrlParser: true});
+mongoose.connect("mongodb://rabidale:2725Gregory@ds263791.mlab.com:63791/w0rd-live", {useNewUrlParser: true});
 // var indexRoutes = require("./routes/index");
 // var loginRoutes = require("./routes/login");
 // var createRoutes = require("./routes/create");

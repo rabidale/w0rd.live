@@ -1,0 +1,25 @@
+.w0rdbox {
+    background-color: gray;
+	text-align: center;
+	font-size: 4.0em;
+	margin: 20px;
+	padding: 100px;
+	border: 5px;
+	display: block;
+}
+
+.jumbotron {
+    margin-top: 75px;
+}
+
+.btn {
+	margin: 5px;
+}
+
+.link {
+	display: block;
+}
+
+#color-selector {
+	height: 3.0em;
+}
