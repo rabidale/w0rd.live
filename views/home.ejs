@@ -41,13 +41,11 @@
         <div class="container">
           <div class="row text-center" style="display:flex; flex-wrap: wrap;">
             <% w0rds.forEach(function(w0rd){ %>
-              <div class="col-md-3 col-sm-6">
-                  <div class="thumbnail w0rdbox" style="background-color: <%= w0rd.backgroundColor %>;">
+                  <div class="w0rdbox" style="background-color: <%= w0rd.backgroundColor %>;">
                       <div ="caption">
-                          <h4><%= w0rd.word %></h4>
+                          <p><%= w0rd.word %></p>
                       </div>
                   </div>
-              </div>
             <% }); %>
          </div>
         </div>
