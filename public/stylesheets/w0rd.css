@@ -1,19 +1,60 @@
+body {
+	font-family: 'Roboto', sans-serif !important;
+	background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.header{
+	font-size: 6.0rem !important;
+	color: white;
+}
+
+#header-jumbotron {
+	padding: 10px !important;
+	margin-left: 25px !important;
+}
+
+#form-jumbotron {
+	padding: 10px !important;
+	margin-left: 25px !important;
+	color: white;
+}
+
 .w0rdbox {
     background-color: gray;
 	text-align: center;
-	font-size: 4.0em;
+	font-size: 2.5em;
 	margin: 20px;
-	padding: 100px;
+	padding: 1.2em;
 	border: 5px;
-	display: block;
+	display: flex;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-shadow: .25px .25px 1px #2c3e50;
 }
 
 .jumbotron {
-    margin-top: 75px;
+    margin-top: 20px;
+    background-color: transparent !important;
 }
 
 .btn {
 	margin: 5px;
+}
+
+.btn-style {
+	background-color: gray !important;
+	border-color: transparent !important;
+}
+
+.btn-style:hover {
+	border-color: #7f8c8d !important;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
 }
 
 .link {
@@ -23,3 +64,14 @@
 #color-selector {
 	height: 3.0em;
 }
+
+#font-color-selector {
+	height: 3.0em;
+}
+
+#w0rdstream {
+	width: auto !important;
+	margin: 10 !important;
+}
+
+

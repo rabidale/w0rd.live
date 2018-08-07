@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="stylesheets/w0rd.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
         <script
           src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -11,13 +12,11 @@
     </head>
     <body>
       
-      <div class="container">
-        <div>
-          <span class="w0rdbox">
-            w0rd
-          </span>
+      <div class="container jumbotron" id="header-jumbotron">
+            <h1 class="header">w0rd.live</h1>
         </div>
-        <div class="container jumbotron">
+        
+        <div class="container jumbotron" id="form-jumbotron">
           <form action="/" method="POST">
             <div class="form-group">
               <input type="text" name="word" class="form-control" placeholder="w0rd goes here" maxlength="15">
@@ -27,12 +26,18 @@
               <input type="color" name="backgroundColor" class="form-control" id="color-selector">
             </div>
             <div class="form-group">
-              <button>Submit</button>
+              <label for="font-color-selector">font color</label>
+              <input type="color" name="fontColor" class="form-control" id="font-color-selector">
             </div>
+            <div class="form-group">
+              <button class="btn btn-primary btn-style">Submit</button>
+              <a href="/" class="btn btn-primary btn-style">back</a>
+            </div>
+            <!--</div>-->
+            <!--  <a href="/" id="backtohomepage" class="btn btn-primary">back to homepage</a>-->
+            <!--</div>-->
           </form>
-        </div>
-        <a href="/" id="backtohomepage">back to homepage</a>
-      </div>
+        
         
         
     </body>

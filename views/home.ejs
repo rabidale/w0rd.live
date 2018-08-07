@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="stylesheets/w0rd.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
         <script
           src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -11,37 +12,19 @@
     </head>
     <body>
         
-        <!--<div class="pos-f-t">-->
-        <!--  <div class="collapse" id="navbarToggleExternalContent">-->
-        <!--    <div class="bg-dark p-4">-->
-        <!--      <h5 class="text-white h4">Collapsed content</h5>-->
-        <!--      <span class="text-muted">-->
-        <!--          <div>-->
-        <!--            <a class="btn btn-primary" href="/">Home</a>-->
-        <!--          </div>-->
-        <!--          <div>-->
-        <!--            <a class="btn btn-primary" href="/login">Login</a>-->
-        <!--          </div>-->
-        <!--      </span>-->
-        <!--    </div>-->
-        <!--  </div>-->
-        <!--  <nav class="navbar navbar-dark bg-dark fixed-top">-->
-        <!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">-->
-        <!--      <span class="navbar-toggler-icon"></span>-->
-        <!--    </button>-->
-        <!--  </nav>-->
-        <!--</div>-->
-        
-        <div class="container jumbotron text-center">
-            <h1>w0rd.live</h1>
-            <a class="btn btn-primary" href="create">add a new w0rd</a>
+        <div class="container jumbotron" id="header-jumbotron">
+            <h1 class="header">w0rd.live</h1>
+            <a class="btn btn-primary btn-style" href="create">add a new w0rd</a>
         </div>
         
         
-        <div class="container">
+        <div class= id="w0rdstream">
           <div class="row text-center" style="display:flex; flex-wrap: wrap;">
             <% w0rds.forEach(function(w0rd){ %>
-                  <div class="w0rdbox" style="background-color: <%= w0rd.backgroundColor %>;">
+                  <div class="w0rdbox" style="
+                  background-color: <%= w0rd.backgroundColor %>;
+                  color: <%= w0rd.fontColor %>;
+                  ">
                       <div ="caption">
                           <p><%= w0rd.word %></p>
                       </div>
@@ -49,39 +32,6 @@
             <% }); %>
          </div>
         </div>
-        
-        <!--<div class="container">-->
-        <!--  <div class="row">-->
-        <!--    <div class="col-sm">-->
-        <!--      <span class="w0rdbox">-->
-        <!--        w0rd-->
-        <!--      </span>-->
-        <!--      <span class="w0rdbox">-->
-        <!--        w0rd-->
-        <!--      </span>-->
-        <!--      <span class="w0rdbox">-->
-        <!--        w0rd-->
-        <!--      </span>-->
-        <!--      <span class="w0rdbox">-->
-        <!--        w0rd-->
-        <!--      </span>-->
-        <!--    </div>-->
-        <!--    <div class="col-sm">-->
-        <!--      <span class="w0rdbox">-->
-        <!--        w0rd-->
-        <!--      </span>-->
-        <!--      <span class="w0rdbox">-->
-        <!--        w0rd-->
-        <!--      </span>-->
-        <!--      <span class="w0rdbox">-->
-        <!--        w0rd-->
-        <!--      </span>-->
-        <!--      <span class="w0rdbox">-->
-        <!--        w0rd-->
-        <!--      </span>-->
-        <!--    </div>-->
-        <!--  </div>-->
-        <!--</div>-->
         
     </body>
 </html>
