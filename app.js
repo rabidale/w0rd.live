@@ -18,7 +18,8 @@ mongoose.connect("mongodb://rabidale:2725Gregory@ds263791.mlab.com:63791/w0rd-li
 var w0rdSchema = new mongoose.Schema({
     word: String,
     backgroundColor: String,
-    fontColor: String
+    fontColor: String,
+    fontStyle: String
 });
 
 var W0rd = mongoose.model("W0rd", w0rdSchema);
@@ -64,7 +65,8 @@ app.post("/", function(req, res){
     var word = req.body.word;
     var backgroundColor = req.body.backgroundColor;
     var fontColor = req.body.fontColor;
-    var newW0rd = {word: word, backgroundColor: backgroundColor, fontColor: fontColor};
+    var fontStyle = req.body.fontStyle;
+    var newW0rd = {word: word, backgroundColor: backgroundColor, fontColor: fontColor, fontStyle: fontStyle};
     //Create new w0rd and save to DB
     W0rd.create(newW0rd, function(err, newlyCreated){
         if(err){
