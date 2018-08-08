@@ -24,6 +24,7 @@ body {
 
 .w0rdbox {
     background-color: gray;
+    border-radius: 2.5px;
 	text-align: center;
 	font-size: 2.5em;
 	margin: 20px;
@@ -69,9 +70,18 @@ body {
 	height: 3.0em;
 }
 
+#font-selector {
+	width: 50% !important;
+}
+
 #w0rdstream {
 	width: auto !important;
-	margin: 10 !important;
+	text-align: center !important;
+	position:relative;
+}
+
+.form-control {
+	width: 60% !important;
 }
 
 

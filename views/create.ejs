@@ -19,26 +19,31 @@
         <div class="container jumbotron" id="form-jumbotron">
           <form action="/" method="POST">
             <div class="form-group">
-              <input type="text" name="word" class="form-control" placeholder="w0rd goes here" maxlength="15">
+              <input type="text" name="word" class="form-control" placeholder="w0rd goes here" maxlength="15" pattern="^[a-zA-Z][a-zA-Z_\.]{1,20}$" title="letters only, no special characters">
             </div>
-            <div class="form-group">
-              <input type="text" name="fontStyle" class="form-control" placeholder="type normal or italic">
+            <div class="form-group" id="font-selector">
+              <!--<input type="text" name="fontStyle" class="form-control" placeholder="type normal or italic">-->
+              <div>
+                <label for="normalFont">regular font</label>
+                <input type="radio" id="normalFont" name="fontStyle" class="form-control" value="normal">
+              </div>
+              <div>
+                <label for="normalFont">italic font</label>
+                <input type="radio" id="italicFont" name="fontStyle" class="form-control" value="Italic">
+              </div>
             </div>
             <div class="form-group">
               <label for="color-selector">background color</label>
-              <input type="color" name="backgroundColor" class="form-control" id="color-selector">
+              <input type="color" name="backgroundColor" class="form-control" id="color-selector" value="#232526" placeholder="#232526">
             </div>
             <div class="form-group">
               <label for="font-color-selector">font color</label>
-              <input type="color" name="fontColor" class="form-control" id="font-color-selector">
+              <input type="color" name="fontColor" class="form-control" id="font-color-selector" value="#ffffff" placeholder="#ffffff">
             </div>
             <div class="form-group">
               <button class="btn btn-primary btn-style">Submit</button>
               <a href="/" class="btn btn-primary btn-style">back</a>
             </div>
-            <!--</div>-->
-            <!--  <a href="/" id="backtohomepage" class="btn btn-primary">back to homepage</a>-->
-            <!--</div>-->
           </form>
         
         
