@@ -92,3 +92,6 @@ body {
 	top: 5px;
 }
 
+input[type="radio"]{
+    -webkit-appearance: radio;
+}
