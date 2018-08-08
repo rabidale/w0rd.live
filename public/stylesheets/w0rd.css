@@ -8,7 +8,7 @@ body {
 }
 
 .header{
-	font-size: 6.0rem !important;
+	font-size: 5.3rem !important;
 	color: white;
 }
 
@@ -93,5 +93,5 @@ body {
 }
 
 input[type="radio"]{
-    -webkit-appearance: radio;
+    -webkit-appearance: radio !important;
 }
