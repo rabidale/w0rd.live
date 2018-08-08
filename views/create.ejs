@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="stylesheets/w0rd.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:900, 900i" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
@@ -22,14 +23,15 @@
               <input type="text" name="word" class="form-control" placeholder="w0rd goes here" maxlength="15" pattern="^[a-zA-Z][a-zA-Z_\.]{1,20}$" title="letters only, no special characters">
             </div>
             <div class="form-group" id="font-selector">
-              <!--<input type="text" name="fontStyle" class="form-control" placeholder="type normal or italic">-->
               <div>
                 <label for="normalFont">regular font</label>
-                <input type="radio" id="normalFont" name="fontStyle" class="form-control" value="normal">
+                <input type="radio" id="normalFont" name="fontStyle" class="form-control radio" value="normal">
               </div>
+            </div>
+            <div class="form-group" id="font-selector">
               <div>
                 <label for="normalFont">italic font</label>
-                <input type="radio" id="italicFont" name="fontStyle" class="form-control" value="Italic">
+                <input type="radio" id="italicFont" name="fontStyle" class="form-control radio" value="Italic">
               </div>
             </div>
             <div class="form-group">
