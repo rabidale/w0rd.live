@@ -12,28 +12,25 @@
     </head>
     <body>
         
+        
         <div class="container jumbotron" id="header-jumbotron">
             <h1 class="header">w0rd.live</h1>
-            <a class="btn btn-primary btn-style" href="create">add a new w0rd</a>
-            <a class="btn btn-primary btn-style" href="about">about</a>
+        </div>
+        <div class="container" id="h2-jumbotron">
+            <h3 style="color: white">
+                w0rd.live is my take on "hyper-light" social media.
+                This is a working example of the skills I have to offer as a web developer in training.
+                It was created using Node.JS and EJS, soon to integrate React.js and Redux.</h3>
+                <br>
+                <h3 style="color: white">If you have any questions or comments feel free to contact me at <a id="mail" href="mailto:hello@w0rd.live">hello@w0rd.live</a></h3>
+                <br>
+                <h4 style="color: white">2018 | Created by Alex Rabideau</h4>
+                <br>
+                <a href="/" class="btn btn-primary btn-style">back</a>
         </div>
         
         
-        <div class= id="w0rdstream">
-          <div class="row text-center" style="display:flex; flex-wrap: wrap;">
-            <% w0rds.forEach(function(w0rd){ %>
-                  <div class="w0rdbox" style="
-                  background-color: <%= w0rd.backgroundColor %>;
-                  color: <%= w0rd.fontColor %>;
-                  font-style: <%= w0rd.fontStyle %>;
-                  ">
-                      <div ="caption">
-                          <p><%= w0rd.word %></p>
-                      </div>
-                  </div>
-            <% }); %>
-         </div>
-        </div>
+        
         
     </body>
 </html>

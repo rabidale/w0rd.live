@@ -1,5 +1,4 @@
 body {
-	size: 1em;
 	font-family: 'Roboto', sans-serif !important;
 	background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
@@ -8,11 +7,16 @@ body {
 }
 
 .header{
-	font-size: 5rem !important;
+	font-size: 6.0rem !important;
 	color: white;
 }
 
 #header-jumbotron {
+	padding: 10px !important;
+	margin-left: 25px !important;
+}
+
+#h2-jumbotron {
 	padding: 10px !important;
 	margin-left: 25px !important;
 }
@@ -72,7 +76,7 @@ body {
 }
 
 #font-selector {
-	position: relative;
+	width: 50% !important;
 }
 
 #w0rdstream {
@@ -82,8 +86,11 @@ body {
 }
 
 .form-control {
-	display: block !important;
-	width: 75% !important;
+	width: 60% !important;
+}
+
+#mail {
+	color: white !important;
 }
 
 

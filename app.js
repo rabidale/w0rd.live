@@ -79,8 +79,14 @@ app.post("/", function(req, res){
 });
 
 //CREATE ROUTE
-app.use("/", function(req, res){
+app.use("/create", function(req, res){
     res.render("create");
+});
+
+
+//ABOUT ROUTE
+app.get("/about", function(req, res){
+    res.render("about");
 });
 
 //When routing is set back up use these
